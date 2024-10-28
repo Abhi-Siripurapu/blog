@@ -1,5 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Home
 ---
 I'm Abhi, I'm working on stuff in Bio + AI. My recent interests are in the development of antibody therapuetics using PLMs.
 

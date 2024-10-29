@@ -1,4 +1,5 @@
 # the biology revolution: when we can run a thousand experiments at a time
+March 19, 2023
 
 **imagine** a world where biology operates with the efficiency of silicon. where, instead of biologists working on a single experiment for months, we deploy AI-driven agents running thousands of parallel trials at once, combing through the space of possibilities in search of the next big discovery. what happens when biology scales like machine learning? let's talk about how a world where we can iterate as fast as we can compute changes everything.
 

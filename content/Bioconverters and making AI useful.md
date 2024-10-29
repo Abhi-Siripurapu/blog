@@ -29,9 +29,9 @@ Initially, I relied a lot on guesswork, especially with promoter strength and ge
 
 The relationship between plasmid structure and bacterial behavior is a **high-dimensional, nonlinear system**. Slight tweaks in gene arrangement, promoter strength, or ribosome binding site (RBS) strength can have unpredictable downstream effects on bacterial metabolism. A traditional algorithmic approach—using heuristics to optimize gene expression—didn't really work. I needed a model that could understand and predict the complex, nonlinear interactions between these genetic components.
 
-Enter the neural network. Specifically, I used a **feedforward neural network** with multiple hidden layers, trained on experimental data gathered from various plasmid designs. The reason for using a neural network was simple: the system was too complex for traditional optimization methods. With its ability to generalize from data and make nonlinear predictions, the neural network could “learn” the relationships between plasmid design and bacterial performance.
+Enter the neural network. Specifically, I used a **graph neural network** with multiple hidden layers, trained on experimental data gathered from various plasmid designs. The reason for using a neural network was simple: the system was too complex for traditional optimization methods. With its ability to generalize from data and make nonlinear predictions, the neural network could “learn” the relationships between plasmid design and bacterial performance. This was inspired by **Pathway GNN**—it uses gnns to simulate metabolic interactions and predict effects of different gene pathway modifications on cell behavior. I'm essentially modifying their approach to focus on ethanol production/bacterial growth.
 
-### Paramaters
+### Parameters
 
 
 1. **Plasmid design parameters**:
@@ -91,7 +91,7 @@ Another significant discovery was the implementation of **adaptive promoters**�
 
 ### Taking AI Predictions to the Bench
 
-With the AI's top-performing plasmid designs, I synthesized these plasmids and introduced them into *E. coli* via electroporation. Each plasmid was tested under controlled conditions in a **bioreactor** to measure ethanol output and bacterial survival.
+With the model's top-performing plasmid designs, I synthesized these plasmids and introduced them into *E. coli* via electroporation. Each plasmid was tested under controlled conditions in a **bioreactor** to measure ethanol output and bacterial survival.
 
 The AI-predicted plasmids performed exactly as expected. One particular design—featuring the adaptive promoter and shifted gene positions—yielded **25% more ethanol** than the baseline pUC-pdc-adh plasmid and extended bacterial survival by **30%**.
 
